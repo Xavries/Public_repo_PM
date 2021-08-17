@@ -26,13 +26,13 @@ jobs:
         with:
           args: zip -qq -r dir.zip dir
       - name: default deploy
-        uses: Xavries/Public_repo_PM@main
+        uses: appleboy/lambda-action@master
         with:
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: us-east-2
           function_name: py_test_func_pm
-          zip_file: bundle.zip
+          zip_file: dir.zip
     
       #- name: Run a multi-line script to install another staff we could have via requirements.txt or separately
         #run: |
