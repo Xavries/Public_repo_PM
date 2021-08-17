@@ -22,9 +22,12 @@ jobs:
         uses: actions/checkout@v2
         
       - name: zip
-        uses: montudor/action-zip@v1
+        uses: thedoctor0/zip-release@master
         with:
-          args: zip -r ./bundle.zip ./.  #zip -qq -r dir.zip . -i dir 
+          type: 'zip'
+          filename: 'dir.zip'
+          #path: '.'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
       - name: default deploy
         uses: appleboy/lambda-action@master
         with:
