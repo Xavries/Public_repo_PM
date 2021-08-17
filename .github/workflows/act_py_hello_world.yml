@@ -14,8 +14,6 @@ jobs:
     strategy:
       matrix:
         python-version: [3.9]
-  
-
       
     steps:
       - name: checkout
@@ -41,8 +39,3 @@ jobs:
         #run: |
          #python3 -m pip install --upgrade pip
          #pip3 install -r requirements.txt
-    
-    
-      #- uses: actions/checkout@v2
-      #- name: Run a one-line script
-        #run: python3 Hello_world_PM.py
