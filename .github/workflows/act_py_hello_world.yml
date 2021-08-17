@@ -24,7 +24,7 @@ jobs:
       - name: zip
         uses: montudor/action-zip@v1
         with:
-          args: zip -qq -r dir.zip Public_repo_PM  #zip -qq -r dir.zip . -i dir 
+          args: zip -r ./bundle.zip ./.  #zip -qq -r dir.zip . -i dir 
       - name: default deploy
         uses: appleboy/lambda-action@master
         with:
