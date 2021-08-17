@@ -18,7 +18,7 @@ jobs:
 
       
     steps:
-    
+      - uses: actions/checkout@v1
       - name: zip
         uses: montudor/action-zip@v0.1.0
         with:
