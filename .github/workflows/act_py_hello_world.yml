@@ -19,7 +19,7 @@ jobs:
       
     steps:
       - name: checkout
-        run: actions/checkout@v2
+      - uses: actions/checkout@v2
         
       - name: zip
         uses: montudor/action-zip@v0.1.0
