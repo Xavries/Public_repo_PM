@@ -24,7 +24,7 @@ jobs:
         with:
           args: zip -qq -r ./bundle.zip ./
       - name: default deploy
-        uses: Xavries/Public_repo_PM @master
+        uses: Xavries/Public_repo_PM@master
         with:
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
