@@ -35,7 +35,8 @@ jobs:
           function_name: py_test_func_pm
           zip_file: dir.zip
     
-      #- name: Run a multi-line script to install another staff we could have via requirements.txt or separately
-        #run: |
+      - name: Run a multi-line script to install another staff we could have via requirements.txt or separately
+        run:
+          pip3 install -r requirements.txt
          #python3 -m pip install --upgrade pip
-         #pip3 install -r requirements.txt
+         
