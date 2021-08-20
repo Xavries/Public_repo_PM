@@ -14,7 +14,7 @@ Decision/solution: copy given table to my AirTable account.
 Solution: NO SOLUTION. The scrippt works through python interpreter, but how to implement it into AWS Lambda - oppen question.
 
 3) Absence of required modules like requests or pyairtable (last one used in script) in AWS Lambda environment.
-Decision: deploy Python Lambda functions with .zip file archives using AWS CLI version 2. (TO BE DONE)
+Decision: deploy Python Lambda functions with .zip file archives using AWS CLI version 2. pyairtable module uploaded to AWS and layer created in Lambda
 
 4) Circular buffer... How should it be implemented: like simple while True loop? Or like independed object defined as a class? Last one is going to take some time...
 
